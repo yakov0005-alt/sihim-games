@@ -1,0 +1,22 @@
+<!doctype html><html lang="he" dir="rtl"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>בודק הכרטיסים | שיאים</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="../../shared/sihim.css">
+<link rel="stylesheet" href="style.css">
+<canvas id="game"></canvas>
+<div class="flash" id="flash"></div>
+<div class="topbar"><span class="hearts" id="hearts"></span><span class="comboTxt" id="comboTxt"></span></div>
+<div class="hint" id="hint"><span>הקישו על הצבע התואם לפני שהכרטיס חוצה את השער</span></div>
+<div class="controls">
+  <button class="stamp" id="st-red" data-color="red" data-hint="A" aria-label="חותמת אדומה"></button>
+  <button class="stamp" id="st-green" data-color="green" data-hint="S" aria-label="חותמת ירוקה"></button>
+  <button class="stamp" id="st-blue" data-color="blue" data-hint="D" aria-label="חותמת כחולה"></button>
+  <button class="stamp" id="st-gold" data-color="gold" data-hint="F" aria-label="חותמת זהובה"></button>
+</div>
+<div class="preload" id="preload">
+  <div class="preload-bar"><div class="preload-fill" id="preloadFill"></div></div>
+  <div class="preload-txt" id="preloadTxt">טוען… 0%</div>
+</div>
+<script src="../../shared/sihim.js"></script>
+<script type="module" src="game.js"></script>
+</html>

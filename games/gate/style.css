@@ -1,0 +1,24 @@
+.topbar{position:fixed;top:58px;inset-inline:16px;display:flex;justify-content:space-between;pointer-events:none;font-weight:800;color:#ffd99a;font-size:14px;text-shadow:0 2px 6px rgba(0,0,0,.7);z-index:5}
+.hearts{letter-spacing:2px;font-size:17px;color:#ff6b6b}
+.comboTxt{color:#ffe8c1;transition:color .15s}
+.comboTxt.fever{color:#ff5fae;text-shadow:0 0 10px #ff2e8a,0 2px 6px rgba(0,0,0,.7)}
+.controls{position:fixed;bottom:0;inset-inline:0;display:flex;justify-content:center;gap:12px;padding:10px 10px calc(14px + env(safe-area-inset-bottom));direction:ltr;z-index:8}
+.stamp{width:72px;height:80px;border:0;border-radius:14px;background-color:rgba(13,11,26,.55);background-repeat:no-repeat;background-position:center;background-size:72%;padding:0;cursor:pointer;position:relative;box-shadow:0 5px 0 rgba(0,0,0,.45),inset 0 0 0 2px rgba(255,255,255,.14);transition:transform .06s}
+.stamp:active,.stamp.pressed{transform:translateY(4px) scale(.96);box-shadow:0 1px 0 rgba(0,0,0,.45),inset 0 0 0 2px rgba(255,255,255,.3)}
+.stamp::after{content:attr(data-hint);position:absolute;bottom:3px;inset-inline-end:6px;font:800 11px Rubik,sans-serif;color:#fff8ecb3}
+.stamp[data-color="red"]{background-image:url(assets/stamp-red.webp)}
+.stamp[data-color="green"]{background-image:url(assets/stamp-green.webp)}
+.stamp[data-color="blue"]{background-image:url(assets/stamp-blue.webp)}
+.stamp[data-color="gold"]{background-image:url(assets/stamp-gold.webp)}
+.hint{position:fixed;bottom:100px;inset-inline:16px;text-align:center;font:700 13px/1.4 Rubik,sans-serif;color:#ffe8c1;pointer-events:none;z-index:4;opacity:1;transition:opacity .6s}
+.hint span{background:rgba(13,11,26,.62);padding:5px 12px;border-radius:999px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
+.hint.faded{opacity:0}
+.sh-hud .sh-pill{padding:6px 9px;font-size:13px}
+.flash{position:fixed;inset:0;background:radial-gradient(circle at 50% 70%,rgba(255,95,174,.35),transparent 70%);opacity:0;pointer-events:none;z-index:3;transition:opacity .3s}
+.flash.on{opacity:1}
+.sh-panel .gateTitle{display:block;width:150px;margin:0 auto 6px;filter:drop-shadow(0 6px 14px rgba(0,0,0,.5))}
+.preload{position:fixed;inset:0;z-index:30;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;background:#0d0b1a}
+.preload-bar{width:min(260px,70vw);height:10px;border-radius:999px;background:rgba(255,255,255,.12);overflow:hidden}
+.preload-fill{width:0%;height:100%;background:linear-gradient(90deg,#ffc83d,#ff6b2c);transition:width .15s ease-out}
+.preload-txt{font:800 13px Rubik,sans-serif;color:#ffd99a}
+.preload.hidden{display:none}

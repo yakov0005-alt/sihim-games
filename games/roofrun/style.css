@@ -1,0 +1,15 @@
+html,body{background:#1a2230}
+.topbar{position:fixed;top:58px;inset-inline:16px;display:flex;justify-content:space-between;pointer-events:none;font-weight:800;color:#ffd99a;font-size:14px;text-shadow:0 2px 6px rgba(0,0,0,.7);z-index:5}
+.hearts{letter-spacing:2px;font-size:17px;color:#ff6b6b}
+.routeTxt{color:#9ecbe0}
+.hint{position:fixed;bottom:98px;width:100%;text-align:center;font-size:11px;color:#c9d3e0;text-shadow:0 1px 4px rgba(0,0,0,.8);pointer-events:none;z-index:4}
+.controls{position:fixed;bottom:0;inset-inline:0;display:flex;justify-content:center;gap:14px;padding:10px 10px calc(14px + env(safe-area-inset-bottom));direction:ltr;z-index:8}
+.ctl{width:74px;height:74px;border:0;border-radius:16px;background:rgba(13,20,32,.55);color:#ffe8c1;font-size:28px;line-height:74px;padding:0;cursor:pointer;box-shadow:0 5px 0 rgba(0,0,0,.45),inset 0 0 0 2px rgba(255,255,255,.14);transition:transform .06s}
+.ctl:active{transform:translateY(4px) scale(.96);box-shadow:0 1px 0 rgba(0,0,0,.45),inset 0 0 0 2px rgba(255,255,255,.3)}
+.sh-hud .sh-pill{padding:6px 9px;font-size:13px}
+.sh-panel .roofTitle{display:block;width:140px;margin:0 auto 6px;filter:drop-shadow(0 6px 14px rgba(0,0,0,.5))}
+.preload{position:fixed;inset:0;z-index:30;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;background:#1a2230}
+.preload-bar{width:min(260px,70vw);height:10px;border-radius:999px;background:rgba(255,255,255,.12);overflow:hidden}
+.preload-fill{width:0%;height:100%;background:linear-gradient(90deg,#ffc83d,#ff6b2c);transition:width .15s ease-out}
+.preload-txt{font:800 13px Rubik,sans-serif;color:#ffd99a}
+.preload.hidden{display:none}

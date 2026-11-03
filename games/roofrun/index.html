@@ -1,0 +1,19 @@
+<!doctype html><html lang="he" dir="rtl"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>רץ לצד הרכבת | שיאים</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="../../shared/sihim.css">
+<link rel="stylesheet" href="style.css">
+<canvas id="game"></canvas>
+<div class="topbar"><span class="hearts" id="hearts"></span><span class="routeTxt" id="routeTxt"></span></div>
+<div class="hint">חץ מעלה / רווח לדילוג · חץ מטה לגלישה · בטלפון לוחצים על הכפתורים</div>
+<div class="controls">
+  <button class="ctl" id="btn-slide" aria-label="גלישה">⬇</button>
+  <button class="ctl" id="btn-jump" aria-label="דילוג">⬆</button>
+</div>
+<div class="preload" id="preload">
+  <div class="preload-bar"><div class="preload-fill" id="preloadFill"></div></div>
+  <div class="preload-txt" id="preloadTxt">טוען… 0%</div>
+</div>
+<script src="../../shared/sihim.js"></script>
+<script type="module" src="game.js"></script>
+</html>
