@@ -1,0 +1,20 @@
+<!doctype html><html lang="he" dir="rtl"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>חופית בחוף | שיאים</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="../../shared/sihim.css">
+<link rel="stylesheet" href="style.css">
+<canvas id="game"></canvas>
+<div class="topbar"><span class="hearts" id="hearts"></span><span class="stageLabel" id="stageLabel"></span><span class="comboTxt" id="comboTxt"></span></div>
+<div class="hint"><span>רוצו אחרי הגל, נקרו מה שהוא חושף, וברחו לפני שהוא חוזר</span></div>
+<div class="controls">
+  <button class="ctl" id="ctl-left" data-hint="A" aria-label="רוצו לכיוון החוף">◀</button>
+  <button class="ctl ctl-peck" id="ctl-peck" data-hint="Space" aria-label="נקר">⚡</button>
+  <button class="ctl" id="ctl-right" data-hint="D" aria-label="רוצו לכיוון הים">▶</button>
+</div>
+<div class="preload" id="preload">
+  <div class="preload-bar"><div class="preload-fill" id="preloadFill"></div></div>
+  <div class="preload-txt" id="preloadTxt">טוען… 0%</div>
+</div>
+<script src="../../shared/sihim.js"></script>
+<script type="module" src="game.js"></script>
+</html>
