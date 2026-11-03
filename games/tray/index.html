@@ -1,0 +1,20 @@
+<!doctype html><html lang="he" dir="rtl"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>מגש הפירות | שיאים</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="../../shared/sihim.css">
+<link rel="stylesheet" href="style.css">
+<canvas id="game" aria-label="מגש עץ עם פירות מתגלגלים, מטים אותו כדי לקבץ שלושה פירות זהים"></canvas>
+<div class="status">
+  <span class="eyebrow"><img src="assets/tray.webp" alt=""><span id="lvlline">שלב 1</span><span class="sep">·</span><span id="timer">50 שנ׳</span></span>
+  <div id="goal">קבצו 3 פירות זהים · 0/5</div>
+  <div class="track"><i id="goalbar"></i></div>
+</div>
+<div id="toast" aria-live="polite"></div>
+<div class="hint">גררו את המגש כדי להטות אותו · חצים/WASD בלי מגע · קבצו 3 פירות זהים שנוגעים זה בזה לפני שנגמר הזמן</div>
+<div class="preload" id="preload">
+  <div class="preload-bar"><div class="preload-fill" id="preloadFill"></div></div>
+  <div class="preload-txt" id="preloadTxt">טוען… 0%</div>
+</div>
+<script src="../../shared/sihim.js"></script>
+<script type="module" src="game.js"></script>
+</html>
