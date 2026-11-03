@@ -1,0 +1,19 @@
+<!doctype html><html lang="he" dir="rtl"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>הדג החכם | שיאים</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="../../shared/sihim.css">
+<link rel="stylesheet" href="style.css">
+<canvas id="game" aria-label="קרפיון גדול במשיכת חבל עם דייג, החליקו בניגוד למשיכות שלו"></canvas>
+<div class="arena">
+  <div class="fishName" id="fishName">הדייג הזהיר</div>
+  <div class="track"><i id="tensionFill"></i><span class="zone lose"></span><span class="zone win"></span></div>
+</div>
+<div id="toast" aria-live="polite"></div>
+<div class="hint">החליקו נגד כיוון המשיכה של הדייג (חיצים / A־D)</div>
+<div class="preload" id="preload">
+  <div class="preload-bar"><div class="preload-fill" id="preloadFill"></div></div>
+  <div class="preload-txt" id="preloadTxt">טוען… 0%</div>
+</div>
+<script src="../../shared/sihim.js"></script>
+<script type="module" src="game.js"></script>
+</html>

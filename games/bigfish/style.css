@@ -1,0 +1,25 @@
+body{background:radial-gradient(ellipse at 50% 30%,#0f3b3a 0%,#06181c 100%)}
+.arena{position:fixed;top:68px;inset-inline:16px;display:flex;flex-direction:column;align-items:center;gap:6px;pointer-events:none;z-index:5;color:#eafff6;text-shadow:0 2px 8px #00281fcc}
+.fishName{font-weight:800;font-size:14px;letter-spacing:1px;color:#ffe9a8}
+.track{position:relative;width:min(420px,86vw);height:16px;border-radius:999px;background:#02110fcc;border:1px solid #ffffff22;overflow:hidden}
+.track i{position:absolute;inset-inline-start:0;top:0;bottom:0;width:50%;background:linear-gradient(90deg,#ff6b6b,#ffd24a,#4fe3b8);transition:width .12s linear}
+.track .zone{position:absolute;top:-1px;bottom:-1px;width:4px;background:#ffffff55}
+.track .zone.lose{inset-inline-start:6%}
+.track .zone.win{inset-inline-end:6%}
+#toast{position:fixed;top:32%;width:100%;text-align:center;font-size:28px;font-weight:900;color:#eafff6;text-shadow:0 3px 14px #012b22;pointer-events:none;transition:opacity .25s,transform .25s;opacity:0;transform:translateY(8px);z-index:6}
+#toast.show{opacity:1;transform:translateY(0)}
+.hint{position:fixed;bottom:max(16px,env(safe-area-inset-bottom));inset-inline:0;text-align:center;color:#d9fff0cc;font-weight:700;font-size:12.5px;pointer-events:none;text-shadow:0 2px 6px #00000066;z-index:5}
+#game{touch-action:none}
+.sh-panel::before{content:'';display:block;width:120px;height:134px;margin:0 auto 6px;background:url(assets/title.webp) center/contain no-repeat}
+.sh-panel{background:linear-gradient(160deg,#103530,#07201c);border-color:#4fe3b855}
+.sh-overlay{background:radial-gradient(ellipse at 50% 28%,#12463f99,#071815df)}
+.sh-panel h1{background:linear-gradient(90deg,#ffe9a8,#4fe3b8);-webkit-background-clip:text;background-clip:text}
+.sh-play{color:#07201c;background:linear-gradient(90deg,#ffe9a8,#4fe3b8);box-shadow:0 6px 0 #1b6d5c}
+.sh-play:active{box-shadow:0 2px 0 #1b6d5c}
+.sh-hud .sh-pill,.sh-btn{background:#06221ed9}
+.preload{position:fixed;inset:0;z-index:30;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;background:#06181c}
+.preload-bar{width:min(260px,70vw);height:10px;border-radius:999px;background:#ffffff1f;overflow:hidden}
+.preload-fill{width:0%;height:100%;background:linear-gradient(90deg,#ffe9a8,#4fe3b8);transition:width .15s ease-out}
+.preload-txt{font:800 13px Rubik,sans-serif;color:#d9fff0}
+.preload.hidden{display:none}
+@media(max-width:500px){.sh-hud{gap:4px;padding:8px}.sh-hud .sh-pill{font-size:11px;padding:7px}.sh-btn{min-width:34px;padding:0 8px}.arena{top:60px}.fishName{font-size:12px}.sh-panel::before{width:92px;height:102px}.sh-panel h1{font-size:28px}#toast{font-size:22px}}
