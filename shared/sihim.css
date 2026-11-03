@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;800;900&display=swap');
+:root{--bg:#0d0b1a;--ink:#fff8ec;--gold:#ffc83d;--accent:#ff6b2c;--teal:#22d3c5;--card:#1a1630}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--ink);font-family:Rubik,system-ui,sans-serif;overflow:hidden;touch-action:none;user-select:none}
+#game{position:fixed;inset:0;display:block;width:100%;height:100%}
+.sh-hud{position:fixed;top:0;inset-inline:0;display:flex;gap:8px;align-items:center;padding:calc(10px + env(safe-area-inset-top)) 12px 10px;z-index:10;pointer-events:none;font-weight:800}
+.sh-hud .sh-pill{background:rgba(13,11,26,.6);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.15);border-radius:999px;padding:6px 14px;font-size:15px}
+.sh-hud .sp{flex:1}
+.sh-btn{pointer-events:auto;cursor:pointer;background:rgba(13,11,26,.6);color:var(--ink);border:1px solid rgba(255,255,255,.2);border-radius:999px;min-width:40px;height:40px;font-size:18px;font-family:inherit;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;padding:0 12px}
+.sh-overlay{position:fixed;inset:0;z-index:20;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 30%,rgba(40,30,90,.85),rgba(8,6,18,.95));padding:20px}
+.sh-overlay.hidden{display:none}
+.sh-panel{max-width:440px;width:100%;text-align:center;background:linear-gradient(160deg,#241d48,#15122b);border:1px solid rgba(255,200,61,.35);border-radius:24px;padding:26px 22px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.sh-panel h1{margin:0 0 4px;font-size:34px;font-weight:900;background:linear-gradient(90deg,var(--gold),var(--accent));-webkit-background-clip:text;color:transparent}
+.sh-panel .sub{opacity:.8;margin:0 0 14px}
+.sh-panel ul{text-align:right;padding-inline-start:20px;line-height:1.7;margin:10px 0 16px}
+.sh-panel .big{font-size:44px;font-weight:900;color:var(--gold)}
+.sh-play{font-family:inherit;font-weight:900;font-size:22px;border:0;border-radius:16px;padding:14px 36px;cursor:pointer;color:#1b1030;background:linear-gradient(90deg,var(--gold),var(--accent));box-shadow:0 6px 0 #a3401a;transition:transform .1s}
+.sh-play:active{transform:translateY(4px);box-shadow:0 2px 0 #a3401a}
+.sh-panel .row{display:flex;gap:10px;justify-content:center;margin-top:14px}

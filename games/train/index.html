@@ -1,0 +1,25 @@
+<!doctype html><html lang="he" dir="rtl"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>הרכבת לירושלים | שיאים</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../../shared/sihim.css">
+<style>
+.mission{position:fixed;top:64px;left:20px;right:20px;text-align:center;color:#ffe9c2;font-size:14px;font-weight:800;letter-spacing:.3px;text-shadow:0 2px 6px rgba(0,0,0,.6);pointer-events:none}
+.sh-hud .sh-pill{padding:6px 10px;font-size:13px}
+.hint{position:fixed;bottom:22px;left:0;right:0;text-align:center;color:#d9c9ff;font-size:13px;pointer-events:none;text-shadow:0 2px 6px rgba(0,0,0,.6)}
+.tbtns{position:fixed;bottom:max(18px,env(safe-area-inset-bottom));inset-inline:18px;display:flex;justify-content:space-between;z-index:11;pointer-events:none;direction:ltr}
+.tbtns button{pointer-events:auto;touch-action:none;width:84px;height:84px;border-radius:50%;border:2px solid rgba(255,255,255,.35);font:800 15px/1.1 Rubik,sans-serif;color:#fff8ec;box-shadow:0 6px 0 rgba(0,0,0,.35);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}
+.tbtns button span{font-size:26px}
+#brakeBtn{background:linear-gradient(160deg,#ff6b5c,#b32d22)}
+#gasBtn{background:linear-gradient(160deg,#3ddc84,#1a8f53)}
+.tbtns button:active{transform:translateY(5px);box-shadow:0 1px 0 rgba(0,0,0,.35)}
+@media (pointer:coarse){.hint{display:none}}
+@media not (pointer:coarse){.tbtns{display:none}}
+@media(max-width:500px){.sh-hud{gap:4px;padding:8px}.sh-hud .sh-pill{font-size:11px;padding:6px 8px}.sh-panel h1{font-size:28px}.mission{font-size:12px;top:58px}}
+</style>
+<canvas id="game"></canvas>
+<div class="mission" id="mission">הרכבת עומדת בתחנה • האיצו כדי לצאת לדרך</div>
+<div class="hint">⬆/W האצה · ⬇/S/רווח בלימה · יישרו את החץ עם הדגל · עיגול תכלת: עצירה צפויה</div>
+<div class="tbtns">
+  <button id="brakeBtn" aria-label="בלם"><span>✋</span>בלם</button>
+  <button id="gasBtn" aria-label="האצה"><span>⬆</span>האצה</button>
+</div>
+<script src="../../shared/sihim.js"></script>
+<script src="game.js"></script>
+</html>
