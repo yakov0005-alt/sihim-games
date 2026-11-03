@@ -1,0 +1,49 @@
+.topbar {
+  position: fixed;
+  top: 60px;
+  inset-inline: 16px;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+  font-weight: 800;
+  color: #ffd594;
+  font-size: 14px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, .6);
+}
+.dayBanner {
+  position: fixed;
+  top: 40%;
+  inset-inline: 0;
+  text-align: center;
+  font-size: 54px;
+  font-weight: 900;
+  color: #ffc83d;
+  text-shadow: 0 4px 18px rgba(0, 0, 0, .7);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .25s;
+  z-index: 5;
+}
+.dayBanner.show { opacity: 1; }
+#comboTxt { display: inline-block; transform-origin: center; }
+#comboTxt.pop { animation: comboPop .4s cubic-bezier(.2, 1.6, .4, 1); }
+@keyframes comboPop {
+  0% { transform: scale(1.9); color: #fff6d8; }
+  100% { transform: scale(1); color: #ffd594; }
+}
+.hint {
+  position: fixed;
+  bottom: 4px;
+  width: 100%;
+  text-align: center;
+  font-size: 11px;
+  color: #c9b7a3;
+  pointer-events: none;
+}
+.sh-hud .sh-pill { padding: 6px 9px; font-size: 13px; }
+.sh-panel .falTitle {
+  display: block;
+  width: 130px;
+  margin: 0 auto 6px;
+  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, .5));
+}
